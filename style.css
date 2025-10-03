@@ -756,9 +756,159 @@ footer .social a i:hover {
 
 }
 
+/* *************Media Query************ */
+/*  (Mobile)*/
+@media (max-width: 600px) {
+  #header {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  #herosection,
+  #herosection1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .herotext h1{ 
+    margin: 10px;
+    text-align: center;
+   }
+
+   .herotext h2{ 
+    margin: 10px;
+    line-height: 90%;
+   }
+
+   #herosection .herotext p { 
+    text-align: center;
+    }
+
+    .herotext button{
+      align-items: center;
+    }
+
+  #bookd {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #info {
+    grid-template-columns: 1fr; /* 1 card per row */
+  }
+
+  #course {
+    flex-direction: column;
+  }
+
+  .div1, .div2, .div3 {
+    max-width: 100%;
+  }
+
+  #news {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #review{
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  #sponsor {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+ .contact-info{
+ flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+ }
+
+ .contact-container{
+  flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+ }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* 📲 Tablets*/
+@media (min-width: 601px) and (max-width: 992px) {
+  #header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #herosection,
+  #herosection1 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #info {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+
+  #course {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  #news {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #sponsor {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* 💻 Large Devices (Desktop: above 992px) */
+@media (min-width: 993px) {
+  #info {
+    grid-template-columns: repeat(3, 1fr); /* keep 3 per row */
+  }
+
+  #course {
+    flex-direction: row; /* keep side-by-side layout */
+  }
+
+  #news {
+    flex-wrap: nowrap; /* all in one row */
+  }
+
+  #sponsor {
+    justify-content: space-evenly;
+  }
+}
+
+
+
 /* *********************** Blog Page****************** */
 
-
+ 
 
 /* Blog Grid Section */
 .blog-grid {
@@ -1796,128 +1946,3 @@ footer .social a i:hover {
 
 
 
-/* 📱 Tablet view */
-/* @media (max-width: 1024px) {
-  #header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  #herosection,
-  #herosection1 {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .heroimage, .heroimage1 {
-    margin-top: 20px;
-  }
-
-  #bookd {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  #info {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  #course {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #news {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  #sponsor {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-}
-
-/* 📱 Mobile view */
-/* @media (max-width: 768px) {
-  #header {
-    flex-direction: column;
-    padding: 15px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  #herosection,
-  #herosection1 {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .herotext, .herotext1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  #bookd {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #info {
-    grid-template-columns: 1fr;
-  }
-
-  #course {
-    flex-direction: column;
-  }
-
-  #news {
-    grid-template-columns: 1fr;
-  }
-
-  #sponsor {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  footer {
-    text-align: center;
-  }
-
-  footer .social {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-}
-
-}  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-   
